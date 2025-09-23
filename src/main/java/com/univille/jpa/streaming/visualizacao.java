@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @Entity
 public class visualizacao {
     @Id  ///  indetifica chave primaria
-    @GeneratedValue ///  auto incremental
+    @GeneratedValue(strategy = GenerationType.IDENTITY) ///  auto incremental
     private int id;
     @ManyToOne ///  relacao do campo
     private perfil perfil;
@@ -17,9 +17,10 @@ public class visualizacao {
     private LocalDateTime data_hora;
     private int progresso;
 
-    public visualizacao(int id) {
-        this.id = id;
+    public visualizacao() {
+
     }
+
 
     public visualizacao(int id, com.univille.jpa.streaming.perfil perfil, com.univille.jpa.streaming.video video, LocalDateTime data_hora, int progresso) {
         this.id = id;
@@ -28,6 +29,7 @@ public class visualizacao {
         this.data_hora = data_hora;
         this.progresso = progresso;
     }
+
 
     public int getId() {
         return id;
