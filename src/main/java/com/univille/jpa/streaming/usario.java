@@ -1,4 +1,4 @@
 package com.univille.jpa.streaming;
 
-public class usuario {
+public class usario {
 }

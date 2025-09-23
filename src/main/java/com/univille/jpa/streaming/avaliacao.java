@@ -1,70 +1,69 @@
 package com.univille.jpa.streaming;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-
-import java.time.LocalDateTime;
+import jakarta.persistence.Id;
 
 @Entity
 public class avaliacao {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-    private String nome;
-    private String email;
-    private String telefone;
-    private LocalDateTime data;
+    @GeneratedValue
+    private int id;
+    private String perfil_id;
+    private String video_id;
+    private String nota;
+    private String comentario;
 
-    public avaliacao() {
-
+    public avaliacao(int id) {
+        this.id = id;
     }
 
-    public avaliacao(Long id, String nome, String email, String telefone, LocalDateTime data) {
-        Id = id;
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
-        this.data = data;
+    public avaliacao(int id, String perfil_id, String video_id, String nota, String comentario) {
+        this.id = id;
+        this.perfil_id = perfil_id;
+        this.video_id = video_id;
+        this.nota = nota;
+        this.comentario = comentario;
     }
 
-    public Long getId() {
-        return Id;
+    public int getId() {
+        return id;
     }
 
-    public void setId(Long id) {
-        Id = id;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getPerfil_id() {
+        return perfil_id;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setPerfil_id(String perfil_id) {
+        this.perfil_id = perfil_id;
     }
 
-    public String getEmail() {
-        return email;
+    public String getVideo_id() {
+        return video_id;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setVideo_id(String video_id) {
+        this.video_id = video_id;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getNota() {
+        return nota;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setNota(String nota) {
+        this.nota = nota;
     }
 
-    public LocalDateTime getData() {
-        return data;
+    public String getComentario() {
+        return comentario;
     }
 
-    public void setData(LocalDateTime data) {
-        this.data = data;
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
     }
 }
