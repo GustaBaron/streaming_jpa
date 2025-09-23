@@ -13,13 +13,13 @@ public class categoria {
     private int id;
     private String nome;
 
-    public categoria(int id) {
-        this.id = id;
-    }
-
     public categoria(int id, String nome) {
         this.id = id;
         this.nome = nome;
+    }
+
+    public categoria() {
+
     }
 
     public int getId() {
