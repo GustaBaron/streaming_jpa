@@ -4,27 +4,30 @@ package com.univille.jpa.streaming;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class avaliacao {
     @Id
     @GeneratedValue
     private int id;
-    private String perfil_id;
-    private String video_id;
-    private String nota;
+    @ManyToOne
+    private perfil perfil;
+    private int video_id;
+    private int nota;
     private String comentario;
 
-    public avaliacao(int id) {
-        this.id = id;
-    }
 
-    public avaliacao(int id, String perfil_id, String video_id, String nota, String comentario) {
+    public avaliacao(int id, com.univille.jpa.streaming.perfil perfil, int video_id, int nota, String comentario) {
         this.id = id;
-        this.perfil_id = perfil_id;
+        this.perfil = perfil;
         this.video_id = video_id;
         this.nota = nota;
         this.comentario = comentario;
+    }
+
+    public avaliacao() {
+
     }
 
     public int getId() {
@@ -35,27 +38,27 @@ public class avaliacao {
         this.id = id;
     }
 
-    public String getPerfil_id() {
-        return perfil_id;
+    public perfil getPerfil() {
+        return perfil;
     }
 
-    public void setPerfil_id(String perfil_id) {
-        this.perfil_id = perfil_id;
+    public void setPerfil(perfil perfil) {
+        this.perfil = perfil;
     }
 
-    public String getVideo_id() {
+    public int getVideo_id() {
         return video_id;
     }
 
-    public void setVideo_id(String video_id) {
+    public void setVideo_id(int video_id) {
         this.video_id = video_id;
     }
 
-    public String getNota() {
+    public int getNota() {
         return nota;
     }
 
-    public void setNota(String nota) {
+    public void setNota(int nota) {
         this.nota = nota;
     }
 
