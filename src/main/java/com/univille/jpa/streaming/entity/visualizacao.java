@@ -1,4 +1,4 @@
-package com.univille.jpa.streaming;
+package com.univille.jpa.streaming.entity;
 
 
 import jakarta.persistence.*;
@@ -22,7 +22,7 @@ public class visualizacao {
     }
 
 
-    public visualizacao(int id, com.univille.jpa.streaming.perfil perfil, com.univille.jpa.streaming.video video, LocalDateTime data_hora, int progresso) {
+    public visualizacao(int id, perfil perfil, video video, LocalDateTime data_hora, int progresso) {
         this.id = id;
         this.perfil = perfil;
         this.video = video;

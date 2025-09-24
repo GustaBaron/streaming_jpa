@@ -1,4 +1,4 @@
-package com.univille.jpa.streaming;
+package com.univille.jpa.streaming.entity;
 
 
 import jakarta.persistence.Entity;
