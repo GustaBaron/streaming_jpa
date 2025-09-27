@@ -10,15 +10,16 @@ public class perfil {
     private int id;
     private String nome_perfil;
     @ManyToOne
-    private usuario usario;
+    @JoinColumn(name = "usuario_id")
+    private usuario usuario;
 
     public perfil() {
     }
 
-    public perfil(int id, String nome_perfil, usuario usario) {
+    public perfil(int id, String nome_perfil, usuario usuario) {
         this.id = id;
         this.nome_perfil = nome_perfil;
-        this.usario = usario;
+        this.usuario = usuario;
     }
 
     public int getId() {
@@ -38,11 +39,14 @@ public class perfil {
     }
 
     public usuario getUsario() {
-        return usario;
+        return usuario;
     }
 
     public void setUsario(usuario usario) {
-        this.usario = usario;
+        this.usuario = usario;
+    }
+
+    public void setUsuario(usuario user1) {
     }
 }
 
