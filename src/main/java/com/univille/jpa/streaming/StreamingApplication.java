@@ -84,7 +84,35 @@ public class StreamingApplication {
                 user6.setSenha("senha7756");
                 user6.setData_cadastro(LocalDateTime.now());
 
-                usuRepo.saveAll(Arrays.asList(user1, user2, user3, user4, user5, user6));
+
+                usuario user7 = new usuario();
+                user7.setNome("Nicolau Flamel");
+                user7.setEmail("nicolau.flafla@email.com");
+                user7.setSenha("senhaflaflu");
+                user7.setData_cadastro(LocalDateTime.now());
+
+
+                usuario user8 = new usuario();
+                user8.setNome("Luis Carlos");
+                user8.setEmail("carlãoluis@email.com");
+                user8.setSenha("senhasantosmundial3");
+                user8.setData_cadastro(LocalDateTime.now());
+
+
+                usuario user9 = new usuario();
+                user9.setNome("Albertina Rosa");
+                user9.setEmail("beteeeeeeee@email.com");
+                user9.setSenha("senha5.6849612");
+                user9.setData_cadastro(LocalDateTime.now());
+
+
+                usuario user10 = new usuario();
+                user10.setNome("Elisane Esseler");
+                user10.setEmail("elisane.esseler@email.com");
+                user10.setSenha("senhashfsknf1.62");
+                user10.setData_cadastro(LocalDateTime.now());
+
+                usuRepo.saveAll(Arrays.asList(user1, user2, user3, user4, user5, user6, user7, user8, user9, user10));
 
                 // 2. Criar Perfis
                 perfil perfil1 = new perfil();
@@ -93,11 +121,11 @@ public class StreamingApplication {
 
                 perfil perfil2 = new perfil();
                 perfil2.setNome_perfil("Ana Kids");
-                perfil2.setUsuario(user1);
+                perfil2.setUsuario(user2);
 
                 perfil perfil3 = new perfil();
                 perfil3.setNome_perfil("Bruno");
-                perfil3.setUsuario(user2);
+                perfil3.setUsuario(user3);
 
                 perfil perfil4 = new perfil();
                 perfil4.setNome_perfil("Joao");
@@ -111,19 +139,88 @@ public class StreamingApplication {
                 perfil6.setNome_perfil("Sergio");
                 perfil6.setUsuario(user6);
 
-                perRepo.saveAll(Arrays.asList(perfil1, perfil2, perfil3, perfil4, perfil5, perfil6));
+                perfil perfil7 = new perfil();
+                perfil7.setNome_perfil("Nicolas");
+                perfil7.setUsuario(user7);
+
+                perfil perfil8 = new perfil();
+                perfil8.setNome_perfil("Leticia");
+                perfil8.setUsuario(user8);
+
+                perfil perfil9 = new perfil();
+                perfil9.setNome_perfil("Lisete");
+                perfil9.setUsuario(user9);
+
+                perfil perfil10 = new perfil();
+                perfil10.setNome_perfil("Izaias");
+                perfil10.setUsuario(user10);
+
+                perfil perfil11 = new perfil();
+                perfil11.setNome_perfil("Ila");
+                perfil11.setUsuario(user1);
+
+                perfil perfil12 = new perfil();
+                perfil12.setNome_perfil("Nayara");
+                perfil12.setUsuario(user2);
+
+                perfil perfil13 = new perfil();
+                perfil13.setUsuario(user3);
+                perfil13.setNome_perfil("Fabricio");
+
+                perfil perfil14 = new perfil();
+                perfil14.setNome_perfil("Rei");
+                perfil14.setUsuario(user4);
+
+                perfil perfil15 = new perfil();
+                perfil15.setNome_perfil("Tia Dori");
+                perfil15.setUsuario(user5);
+
+                perfil perfil16 = new perfil();
+                perfil16.setNome_perfil("Samw");
+                perfil16.setUsuario(user6);
+
+                perfil perfil17 = new perfil();
+                perfil17.setNome_perfil("Panda");
+                perfil17.setUsuario(user7);
+
+                perfil perfil18 = new perfil();
+                perfil18.setNome_perfil("John");
+                perfil18.setUsuario(user8);
+
+                perfil perfil19 = new perfil();
+                perfil19.setNome_perfil("Gio");
+                perfil19.setUsuario(user9);
+
+                perfil perfil20 = new perfil();
+                perfil20.setNome_perfil("Mumu");
+                perfil20.setUsuario(user10);
+
+                perRepo.saveAll(Arrays.asList(perfil1, perfil2, perfil3, perfil4, perfil5, perfil6, perfil7, perfil8, perfil9, perfil10,
+                                     perfil11, perfil12, perfil13, perfil14, perfil15, perfil16, perfil17, perfil18, perfil19, perfil20));
 
                 // 3. Criar Categorias
                 categoria catAcao = new categoria();
                 catAcao.setNome("Ação");
 
+                categoria catAventura = new categoria();
+                catAventura.setNome("Aventura");
+
                 categoria catComedia = new categoria();
                 catComedia.setNome("Comédia");
 
-                categoria catDoc = new categoria();
-                catDoc.setNome("Documentário");
+                categoria catDocumentario = new categoria();
+                catDocumentario.setNome("Documentário");
 
-                catRepo.saveAll(Arrays.asList(catAcao, catComedia, catDoc));
+                categoria catRomance = new categoria();
+                catRomance.setNome("Romance");
+
+                categoria catSuspense = new categoria();
+                catSuspense.setNome("Suspense");
+
+                categoria catTerror = new categoria();
+                catTerror.setNome("Terror");
+
+                catRepo.saveAll(Arrays.asList(catAcao, catAventura, catComedia, catDocumentario, catRomance, catSuspense, catTerror));
 
                 // 4. Criar Vídeos
                 video video1 = new video();
@@ -142,7 +239,7 @@ public class StreamingApplication {
                 video3.setTitulo("Planeta Terra");
                 video3.setDescricao("Uma jornada visual pelas maravilhas da natureza.");
                 video3.setDuracao(3600);
-                video3.setCategoria(catDoc);
+                video3.setCategoria(catDocumentario);
 
                 // Extra: vídeo com "Missão" no título
                 video video4 = new video();
@@ -178,7 +275,7 @@ public class StreamingApplication {
                 visualizacao visualizacao2 = new visualizacao();
                 visualizacao2.setPerfil(perfil1);
                 visualizacao2.setVideo(video3);
-                visualizacao2.setData_hora(LocalDateTime.now());
+                visualizacao2.setData_hora(LocalDateTime.now().minusWeeks(2));
                 visualizacao2.setProgresso(1800);
 
                 visualizacao visualizacao3 = new visualizacao();
@@ -219,7 +316,7 @@ public class StreamingApplication {
             System.out.println("\n👤 Usuário que mais assistiu vídeos:");
             List<usuario> topUserList = visRepo.findUsuariosPorVisualizacoesDesc(PageRequest.of(0, 1));
             if (!topUserList.isEmpty()) {
-                System.out.println(" - " + topUserList.get(0).getNome());
+                System.out.println(" - " + topUserList.getFirst().getNome());
             } else {
                 System.out.println("Nenhum usuário encontrado.");
             }
