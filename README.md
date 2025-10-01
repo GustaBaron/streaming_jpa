@@ -3,6 +3,11 @@
 
 Aplicação de um **Streaming** desenvolvida em **Java** com **Spring Boot 3.5.6**, utilizando **Spring Data JPA** e **MySQL** para persistência de dados.
 
+## 👥 Equipe
+| Integrante        | E-mail                             |
+|-------------------|------------------------------------|
+| Gustavo Alexandre | barongucontacts@gmailcom           |
+| João Rosa         | joaovitorrosamachado1103@gmail.com |
 ---
 
 ## 📌 Tecnologias Utilizadas
@@ -17,21 +22,37 @@ Aplicação de um **Streaming** desenvolvida em **Java** com **Spring Boot 3.5.6
 ## 📂 Estrutura do Projeto
 ```
 
-streaming/
-┣ src/
-┃ ┣ main/
-┃ ┃ ┣ java/
-┃ ┃ ┃ ┣Entity
-┃ ┃ ┃ ┃ ┣
-┃ ┃ ┃ ┣Repository
-┃ ┃ ┃ ┃ ┣
-┃ ┃ ┃ ┣StreamingApplication.java    # Código fonte
-┃ ┃ ┗ resources/   # Configurações e arquivos de recursos
-┃ ┗ test/          # Testes automatizados
-┣ .gitignore
-┣ .gitattributes
-┣ pom.xml
-┣ mvnw / mvnw.cmd  # Maven Wrapper
+streaming_jpa/
+├── .idea/
+├── .mvn/
+├── src/
+│ ├── main/
+│ │ ├── java/
+│ │ │ └── com/univille/jpa/streaming/
+│ │ │ ├── entity/
+│ │ │ │ ├── avaliacao.java
+│ │ │ │ ├── categoria.java
+│ │ │ │ ├── perfil.java
+│ │ │ │ ├── usuario.java
+│ │ │ │ ├── video.java
+│ │ │ │ └── visualizacao.java
+│ │ │ ├── Repository/
+│ │ │ │ ├── avaliacaoRepository.java
+│ │ │ │ ├── categoriaRepository.java
+│ │ │ │ ├── perfilRepository.java
+│ │ │ │ ├── usuarioRepository.java
+│ │ │ │ ├── videoRepository.java
+│ │ │ │ └── visualizacaoRepository.java
+│ │ │ └── StreamingApplication.java
+│ │ └── resources/
+│ │ └── application.properties
+│ └── test/
+├── target/
+├── .gitattributes
+├── .gitignore
+├── mvnw
+├── mvnw.cmd
+└── pom.xml
 
 ````
 
@@ -42,7 +63,7 @@ streaming/
 No arquivo `application.properties` (ou `application.yml`), configure as credenciais do banco MySQL:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/streamingdb
+spring.datasource.url=jdbc:mysql://localhost:3306/streaming_jpa
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
@@ -56,8 +77,8 @@ spring.jpa.show-sql=true
 Clone o repositório e entre no diretório do projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/streaming.git
-cd streaming
+git clone https://github.com/GustaBaron/streaming_jpa
+
 ```
 
 Compile e execute a aplicação:
@@ -65,11 +86,6 @@ Compile e execute a aplicação:
 ```bash
 ./mvnw spring-boot:run
 ```
-
-A aplicação estará disponível em:
-👉 [http://localhost:8080](http://localhost:8080)
-
----
 
 ## 🧪 Testes
 
@@ -81,24 +97,19 @@ Para rodar os testes:
 
 ---
 
-## 📖 Funcionalidades (em desenvolvimento)
+## 📖 Funcionalidades
 
 * Cadastro de usuários
-* Catálogo de filmes e séries
+* Catálogo de filmes 
 * Persistência em banco de dados MySQL
 * Integração com Spring Data JPA
 * APIs REST para consumo externo
 
 ---
 
-## 📜 Licença
 
-Este projeto é distribuído sob a licença MIT.
-Sinta-se à vontade para usar, modificar e compartilhar.
 
-```
 
----
 
-Quer que eu personalize esse README com **exemplos de endpoints da API REST** (por exemplo, `/usuarios`, `/filmes`, etc.), ou prefere deixar mais genérico por enquanto?
-```
+
+
