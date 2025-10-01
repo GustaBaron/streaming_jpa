@@ -6,7 +6,7 @@ Aplicação de um **Streaming** desenvolvida em **Java** com **Spring Boot 3.5.6
 ## 👥 Equipe
 | Integrante        | E-mail                             |
 |-------------------|------------------------------------|
-| Gustavo Alexandre | barongucontacts@gmailcom           |
+| Gustavo Alexandre | barongucontacts@gmail.com          |
 | João Rosa         | joaovitorrosamachado1103@gmail.com |
 ---
 
