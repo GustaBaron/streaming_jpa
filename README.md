@@ -55,6 +55,17 @@ streaming_jpa/
 └── pom.xml
 
 ````
+---
+
+## 📊 Diagrama de Classes (UML)
+
+<img width="500" height="500" alt="MER-JPA" src= "https://github.com/GustaBaron/streaming_jpa/blob/master/Diagrama%20UML.jpg" />
+
+---
+
+## 📈 Diagrama MER
+
+<img width="600" height="550" alt="MER-Imob1" src="https://github.com/GustaBaron/streaming_jpa/blob/master/Diagrama%20MER.jpg" />
 
 ---
 
