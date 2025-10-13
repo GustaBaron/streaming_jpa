@@ -1,13 +1,8 @@
 
 🎬 Projeto de Streaming
 
-Aplicação de um **Streaming** desenvolvida em **Java** com **Spring Boot 3.5.6**, utilizando **Spring Data JPA** e **MySQL** para persistência de dados.
+Projeto em desenvolvimento como parte da disciplina de **Programação Orientada a Objetos II**, com o objetivo de criar uma aplicação de um **Streaming** desenvolvida em **Java** com **Spring Boot 3.5.6**, utilizando **Spring Data JPA** e **MySQL** para persistência de dados.
 
-## 👥 Equipe
-| Integrante        | E-mail                             |
-|-------------------|------------------------------------|
-| Gustavo Alexandre | barongucontacts@gmail.com          |
-| João Rosa         | joaovitorrosamachado1103@gmail.com |
 ---
 
 ## 📌 Tecnologias Utilizadas
@@ -21,7 +16,6 @@ Aplicação de um **Streaming** desenvolvida em **Java** com **Spring Boot 3.5.6
 
 ## 📂 Estrutura do Projeto
 ```
-
 streaming_jpa/
 ├── .idea/
 ├── .mvn/
@@ -53,7 +47,6 @@ streaming_jpa/
 ├── mvnw
 ├── mvnw.cmd
 └── pom.xml
-
 ````
 ---
 
@@ -118,6 +111,11 @@ Para rodar os testes:
 
 ---
 
+## 👥 Autores
+| Integrante        | E-mail                             |
+|-------------------|------------------------------------|
+| Gustavo Alexandre | barongucontacts@gmail.com          |
+| João Rosa         | joaovitorrosamachado1103@gmail.com |
 
 
 
